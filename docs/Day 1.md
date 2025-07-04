@@ -83,6 +83,8 @@ With each dictionary having two fields role and content.
 ]
 ```
 
+### Side Topic - How to use Ollama in Code
+When we have ollama running in our local machine , then it also serves on the port 11343. ```http://localhost:11434/```
 
 ### API to Call GPT models
 The model chat.completions.create makes the API calls.<br>
