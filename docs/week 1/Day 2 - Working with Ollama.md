@@ -1,10 +1,10 @@
 # Lets See Some Models
 
 ### Popular Open Source Models
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 ### Three Ways to Use Models
-![img_3.png](img_3.png) ![img_4.png](img_4.png)
+![img_3.png](images/img_3.png) ![img_4.png](images/img_4.png)
 1. **Chat interfaces** would be using the apis under the hood
 
 2. **Native APIs** 
@@ -59,5 +59,5 @@ print(response.json()['message']['content'])
 Here we are using the requests library to make a POST request to the ollama API.
 
 Response -
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 

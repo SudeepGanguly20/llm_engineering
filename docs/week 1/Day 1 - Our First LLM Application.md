@@ -63,10 +63,10 @@ the week 1 directory.
 4. We can also pluck out the styling , ,images , formatting etc. Esentially only retaining text data.
 
 So when we run the code , we get data from this website-
-![img.png](img.png)
+![img.png](images/img.png)
 
 In this format-
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 
 

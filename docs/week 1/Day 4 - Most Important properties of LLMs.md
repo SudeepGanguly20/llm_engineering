@@ -1,10 +1,10 @@
 # The rise of Transformers Architecture
 
 ## Timeline
-![img_1.png](img_16.png)
+![img_1.png](images/img_16.png)
 
 # How the world saw the rise of these technologies and why call them "emergent intelligence"
-![img_2.png](img_17.png)
+![img_2.png](images/img_17.png)
 Where we are at this point is emergent Intelligence -
 So while it is true that the outcomes are statistical predictions. We are provising the models with lots of data to learn the 
 patterns and then ask them given all the patterns that you have seen in the training data what would be the most likely next token , 
@@ -16,7 +16,7 @@ they are able to generate text that is coherent and relevant to the input, even 
 
 
 # The Journey So Far
-![img_3.png](img_18.png)
+![img_3.png](images/img_18.png)
 
 # Lets see some more on the Models
 
@@ -30,8 +30,8 @@ they are able to generate text that is coherent and relevant to the input, even 
 
 4. In the past when regression models were used, the number of weights were in the range of hundreds , thousands or sometimes millions.
 5. But with the advent of deep learning and neural networks, the number of weights has exploded to billions and trillions.
-![img_4.png](img_19.png)
-![img_5.png](img_20.png)
+![img_4.png](images/img_19.png)
+![img_5.png](images/img_20.png)
 
 
 
@@ -39,7 +39,7 @@ they are able to generate text that is coherent and relevant to the input, even 
 1. Tokens are the basic units of text that the model uses to generate text.
 
 
-![img_6.png](img_21.png)
+![img_6.png](images/img_21.png)
 
 3. In early days , tokens were single characters. But that required a lot of memory and computation.
 
@@ -58,16 +58,16 @@ they are able to generate text that is coherent and relevant to the input, even 
 Note - GPT provides a tokenizer that can be used to tokenize text into tokens. (https://platform.openai.com/tokenizer). Lets see some examples
 
 ### Example 1
-![img_7.png](img_22.png)
+![img_7.png](images/img_22.png)
 
 As we can see above each of the individual colors is a token and there are total 16 tokens.
 
-OBSERVATION 1 : ![img_8.png](img_23.png) like learning , the , innner
+OBSERVATION 1 : ![img_8.png](images/img_23.png) like learning , the , innner
 OBSERVATION 2 : see for is tokenized as " for" that is the break between words is also meaningful when tokenizing.
 
 
 ### Example 2 : 
-![img_9.png](img_9.png)
+![img_9.png](images/img_9.png)
 
 Here masterers is a made up word and it is tokenized as "master" and "ers". 
 This is because the tokenizer is trying to break the word into smaller chunks that are more meaningful.
@@ -79,7 +79,7 @@ Therefore we are still able to get the meaning of the word even though it is not
 
 
 ### Example 3 : Numbers
-![img_10.png](img_10.png)
+![img_10.png](images/img_10.png)
 
 Here we see that the number 123456789 is tokenized as "123 456 789". That is 3 numbers sequences.
 This is actually a property of GPT tokenizer but this may not happen with other tokenizers.
@@ -92,7 +92,7 @@ This is actually a property of GPT tokenizer but this may not happen with other 
 ## Context Window
 This is the next important property of LLMs.
 
-![img_11.png](img_11.png)
+![img_11.png](images/img_11.png)
 
 1. The context window is the maximum number of tokens that the model can consider when generating the next token.
 2. In our Day 1 application of summarizing a webpage, we were using the context window of 4096 tokens.
@@ -115,16 +115,16 @@ and this is the context window of the model**
 
 
 ## API Cost
-![img_12.png](img_12.png)
+![img_12.png](images/img_12.png)
 
 Vellum is a ai company which does many of the benchmarking for LLMs.
 It has a leaderboard page where we can see the leaders based on various parameters.like reasoning, coding, etc. (https://www.vellum.ai/llm-leaderboard)
 For affordability this is the leaderboard that we are interested in.
-![img_13.png](img_13.png)
+![img_13.png](images/img_13.png)
 
 We can also comapre various models based on their cost per 1 million tokens.
 Below is a chart for the cost and context window of various models.
-![img_14.png](img_14.png)
+![img_14.png](images/img_14.png)
 
 As we can see the context window of Gemini Flash 2.5 is 1 million tokens. 
 This means we can pass almost the entire lifetime work of shakespear(1.2 million) to a model in one prompt.
