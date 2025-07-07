@@ -84,3 +84,18 @@ This entire message passes whould be within the context window of the model.
 ### Now we will have a conversation between two LLMs gpt-4o-mini and llama3.2.
 Code in Week 2 day 2.ipynb
 
+**Note - We previously discussed that models simply take tokens as input and output.**
+
+**Question 1 : Then why do we need the structure ?**
+
+**The structure is important because it helps the model understand the context of the conversation.
+And internally OpenAI turns the above structure into a series of tokens that the model can understand.
+There are many ways to represent the same structure in tokens.**
+
+
+
+
+**Question 2 : How does the model understant when we pass a system token or user token ?** 
+**Ans : That is how the model has been trained. It has been trained on a large corpus of text that has this structure.
+It has learned through training that when it sees a particular directive in a system message token , then the conversation 
+that follows or the tokens that get generated next will most likely be the one that adheres to that directive.**
