@@ -1,4 +1,4 @@
-# Tools
+# Tools (Week 2 - Day 4)
 
 ![image.png](attachment:9c1b13e1-3480-40f5-bc66-1f62615f190b.png)
 
@@ -112,3 +112,35 @@ Finally we call the LLM again.
 Note - In the second LLm call we do not pass the tools parameter again because we do not expect the tools to be needed again.
 
 
+
+
+# Agents (Week 2 - Day 5)
+
+Now that we know about tools, we can use them to create agents.
+![img_4.png](img_4.png)
+
+1. Agents are programs that can use tools to perform tasks. 
+2. They can be used to automate tasks, answer questions, and perform other actions.
+3. They can also be integrated with traditional software applications to enhance their capabilities.
+4. The LLM can also be responsible for planning the sequence of actions that the agent should take to achieve a goal.
+
+
+In our case, we will create an artist agent that will generate images for us.
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
+
+
+
+# Agentic AI
+Agentic AI could be an umbrella term for AI systems that can act autonomously, make decisions, and adapt to changing environments.
+It could be any of the below -
+
+1. Breaking a complex problem into smaller steps, with multiple LLMs carrying out specialized tasks
+2. The ability for LLMs to use Tools to give them additional capabilities
+3. The 'Agent Environment' which allows Agents to collaborate
+4. An LLM can act as the Planner, dividing bigger tasks into smaller ones for the specialists
+5. The concept of an Agent having autonomy / agency, beyond just responding to a prompt - such as Memory
+
+
+#Exercises to Do 
+![img_7.png](img_7.png)
