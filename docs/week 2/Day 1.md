@@ -1,3 +1,6 @@
+
+## API Calls for OpenAI, Claude, and Gemini
+
 ## CLaude API
 The claude API call is similar to the OpenAI API call.
 
@@ -45,3 +48,39 @@ gemini = google.generativeai.GenerativeModel(
 response = gemini.generate_content(user_prompt)
 print(response.text)
 ```
+
+
+## Adverserial Conversations between LLMs
+
+### Prompt Structure
+We will use the below prompt structure to have an adverserial conversation between two LLMs.
+We can have longer list of messages in the conversation.
+1. First we have a system message that sets the context for the conversation.
+2. Then we have a user prompt that starts the conversation.
+3. Then we have an assistant response that is the response from the first LLM.
+4. Then we have a new user prompt that is the response from the second LLM.
+
+**Note - This structure doees not have to necessarily be used for adverserial conversations. 
+We can use this structure for any conversation between a user and an assistant.
+Infact this is how we converse using popular UIs like chatgpt .
+Everytime we have a conversation with something like chatgpt, we are actually sending a list of messages in this format.
+the system prompt is same , but everytime there is a userprompt and an assistant response.
+Then again there will be a user prompt and an assistant response and so on.**
+
+**Note - Therefore for every conversation the entire conversation history is sent as input to the model.
+Therefore we get the illusion that the model is able to remember the entire conversation.**
+
+This entire message passes whould be within the context window of the model.
+
+```
+[
+    {"role": "system", "content": "system message here"},
+    {"role": "user", "content": "first user prompt here"},
+    {"role": "assistant", "content": "the assistant's response"},
+    {"role": "user", "content": "the new user prompt"},
+]
+```
+
+### Now we will have a conversation between two LLMs gpt-4o-mini and llama3.2.
+Code in Week 2 day 2.ipynb
+
