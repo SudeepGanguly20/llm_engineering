@@ -25,7 +25,17 @@ week 5 , day 4.ipynb
 
 
 ## Some Observations
-1. With this conversational agent we only get data that is present in the vector store.
+1. Even if we get some data wrong within this data set still it works fine.
+![img_16.png](img_16.png)
+
+here we provide incorrect spelling of the word avery but the answer generated is still correct.
+So it did not just do text matching but it was able to identify that averi spelt wrong has the same meaning as avery.
+The reason is when we turn the question into a vector embedding, 
+the word averi is located very close to avery. 
+Then it is able to find the closest match in the vector store and return the relevant information.
+
+
+3. With this conversational agent we only get data that is present in the vector store.
 
 ![img_12.png](img_12.png)
 
@@ -63,4 +73,23 @@ LangChain provides a prompt templating system if you want to change the prompt.
 4. Building a RAG pipeline with PDF containing images and text.
 You are building a RAG-based technical support agent using Langchain and OpenAI, with your product manuals stored as PDFs. You want the agent to answer customer queries with both text and images (if available) from the manuals. You are seeking guidance on extending the RAG example to support multimodal (text + image) responses.
 
+
+
+
+### Lets also use another popular vector database - FAISS instead of Chroma.
+The code is most same except for some minor changes in the way we create the vector store and the retriever.
+
+**First a little detour . FAISS is an extremely fast vector database that is used to store and retrieve vectors. 
+It is used in RAG applications to store the embeddings of the documents. And it is very easy to plug it in and use with langchain. Lets see it first**
+
+**Note - FAISS (Facebook AI Similarity Search) is not a vector database like Chroma, Pinecone, etc. 
+It is a library for efficient similarity search and clustering of dense vectors. 
+It is used to store the embeddings of the documents and retrieve them based on similarity.**
+
+**refer - week 5 day 4.5.ipynb**
+
+
+FAISS has two versions - CPU version and GPU version.
+For High performance applications, we can use the GPU version of FAISS.
+But for our application we will use the CPU version of FAISS.
 
